@@ -26,7 +26,8 @@ class deck:
             for i in self.numbers:
                 for e in self.suits:
                     a = card(i,e)
-                    deck.append(a)
+                    self.deck.append(a)
+        return f'Deck created'
     def __str__(self):
         return f'This is a deck'
     def shuffle(self):
@@ -41,3 +42,6 @@ class deck:
     def take_card(self):
         a = self.deck.pop()
         return a
+    def length_of_deck(self):
+        N = len(self.deck)
+        return N
