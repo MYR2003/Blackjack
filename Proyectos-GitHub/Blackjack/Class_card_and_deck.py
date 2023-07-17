@@ -27,7 +27,7 @@ class deck:
                 for e in self.suits:
                     a = card(i,e)
                     self.deck.append(a)
-        return f'Deck created'
+        return print("Deck created")
     def __str__(self):
         return f'This is a deck'
     def shuffle(self):
