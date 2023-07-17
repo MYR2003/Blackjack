@@ -19,7 +19,7 @@ class deck:
     suits = ["Hearts", "Clubs",
             "Diamonds", "Spades"]
     deck = []
-    def __init__(self, numb):
+    def __init__(self, numb=1):
         self.numb = numb
     def create_deck(self):
         for g in range(self.numb):
